@@ -9,19 +9,18 @@ using namespace std;
 void solve() {
    ll n,k,b,s;
    cin>>n>>k>>b>>s;
-   
    if(k==1){
-       if(b!=s){
-           cout<<-1<<endl;
-       }else{
-           for(int i=0;i<n;i++){
-               cout<<s<<" ";
-           }
-           cout<<endl;
-       }
-       return;
+    if(b!=s){
+        cout<<-1<<endl;
+    }else{
+        for(int i=0;i<n;i++)
+        cout<<s<<" ";
+ 
+    cout<<endl;
+    }
+ 
+    return;
    }
-   
    if(s==0 and b==0){
     for(int i=0;i<n;i++){
         cout<<0<<" ";
@@ -39,6 +38,7 @@ void solve() {
    }
    ll sum = s;
    sum-=k*b;
+   
    ll lst = k*b;
    for(int i=1;i<n;i++){
     if(sum==0){
@@ -56,7 +56,8 @@ void solve() {
    }
  
    lst+=sum;
-   cout<<lst<<endl;
+   cout<<lst;
+   cout<<endl;
 }
 int main() {
     int t = 1;
