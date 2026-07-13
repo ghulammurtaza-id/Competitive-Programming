@@ -18,7 +18,7 @@ void solve() {
  
     cout<<endl;
     }
- 
+    //okay
     return;
    }
    if(s==0 and b==0){
